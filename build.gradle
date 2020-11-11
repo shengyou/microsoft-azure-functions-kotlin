@@ -53,14 +53,16 @@ compileTestKotlin {
 }
 
 azurefunctions {
-    // subscription = '<your subscription id>'
-    resourceGroup = 'java-functions-group'
-    appName = 'microsoft-azure-functions-kotlin-1605069111778' // please rename the function name
+    subscription = '...'
+    resourceGroup = '...'
+    appName = '...'
     pricingTier = 'Consumption'
-    // refers https://github.com/microsoft/azure-maven-plugins/tree/develop/azure-functions-maven-plugin#supported-pricing-tiers for all valid values
-    region = 'westus'
+    region = 'japaneast'
     runtime {
-        os = 'windows'
+        os = 'linux'
+    }
+    authentication {
+        type = 'azure_cli'
     }
     // appSettings {
     //    key = 'value'
