@@ -1,0 +1,12 @@
+/.gradle
+/.idea
+/out
+/build
+*.iml
+*.ipr
+*.iws
+
+# Azure Functions
+local.settings.json
+bin/
+obj/
